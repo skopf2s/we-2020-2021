@@ -15,11 +15,16 @@ function generateSkin($content = "", $header = array()) {
 	} else {
 		echo "Stephan Kopf - H-BRS";
 	}
-	echo '</title>
-	<link rel="stylesheet" href="common.css"/>
+	echo '</title>';
+	if(isset($header["style"])) {
+		echo '<style>
+		'.$header["style"].'
+		</style>';
+	}
+	echo '<link rel="stylesheet" href="common.css"/>
 </head>
 <body>
-	<header id="header">__HOME__ <span class="right">__MENÜ__</span></header>
+	<header id="header"><a href="home">Home</a><span class="right">__MENÜ__</span></header>
 	<div id="content">'.$content.'</div>
 	<footer id="footer"><a href="https://www.h-brs.de/de/datenschutz">Datenschutzerklärung</a> • <a href="https://www.h-brs.de/de/impressum">Impressum</a></footer>
 </body>
