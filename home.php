@@ -4,26 +4,26 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 }
 
 $homeContent = array(
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__"),
-	array("header"=>"__HEADER__", "content"=>"__CONTENT__")
+	array("header"=>'<a href="u1_1">Aufgabe 1.1</a>', "content"=>'Fachliche Argumentation über Erfolgsprinzipien des WWW'),
+	array("header"=>'<a href="u1_2">Aufgabe 1.2</a>', "content"=>'HTTP'),
+	array("header"=>'<a href="u1_3">Aufgabe 1.3</a>', "content"=>'HTML-Literatur lesen und Fragen beantworten'),
+	array("header"=>'<a href="u1_4">Aufgabe 1.4</a>', "content"=>'HTML Wireframe'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'__HEADER__', "content"=>'__CONTENT__')
 );
 
 function getContent($args = array()) {

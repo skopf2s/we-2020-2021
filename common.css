@@ -18,6 +18,10 @@ a:hover, a:active {
 	text-decoration: underline;
 }
 
+pre {
+	overflow: auto;
+}
+
 #header {
 	position: fixed;
 	top: 0;
