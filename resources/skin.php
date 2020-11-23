@@ -21,7 +21,7 @@ function generateSkin($content = "", $header = array()) {
 		'.$header["style"].'
 		</style>';
 	}
-	echo '<link rel="stylesheet" href="common.css"/>
+	echo '<link rel="stylesheet" href="resources/common.css"/>
 </head>
 <body>
 	<header id="header"><a href="home">Home</a><span class="right">__MENÜ__</span></header>
