@@ -61,7 +61,7 @@ pre {
 .flex-wrapper {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: left;
+	justify-content: center;
 }
 
 .flexbox {
