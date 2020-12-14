@@ -19,11 +19,11 @@ $homeContent = array(
 	array("header"=>'<a href="u4_2">Aufgabe 4.2</a>', "content"=>'Objekte'),
 	array("header"=>'<a href="u4_3">Aufgabe 4.3</a>', "content"=>'Fibonacci'),
 	array("header"=>'<a href="u4_4">Aufgabe 4.4</a>', "content"=>'Topsort'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__')
+	array("header"=>'<a href="u5_1">Aufgabe 5.1</a>', "content"=>'Klasse für Vorrangrelationen'),
+	array("header"=>'<a href="u5_2">Aufgabe 5.2</a>', "content"=>'Topologische Iterierbarkeit'),
+	array("header"=>'<a href="u5_3">Aufgabe 5.3</a>', "content"=>'Topologischer Generator'),
+	array("header"=>'<a href="u5_4">Aufgabe 5.4</a>', "content"=>'Proxy'),
+	array("header"=>'<a href="u5_5">Aufgabe 5.5</a>', "content"=>'DeepCopy')
 );
 
 function getContent($args = array()) {
