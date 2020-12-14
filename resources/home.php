@@ -15,10 +15,10 @@ $homeContent = array(
 	array("header"=>'<a href="u3_1">Aufgabe 3.1</a>', "content"=>'Responsiv mit Flexbox Desktop-First'),
 	array("header"=>'<a href="u3_2">Aufgabe 3.2</a>', "content"=>'Responsiv mit Grid Mobile-First'),
 	array("header"=>'<a href="u3_3">Aufgabe 3.3</a>', "content"=>'Responsiv mit Grid'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
-	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
+	array("header"=>'<a href="u4_1">Aufgabe 4.1</a>', "content"=>'Funktionen'),
+	array("header"=>'<a href="u4_2">Aufgabe 4.2</a>', "content"=>'Objekte'),
+	array("header"=>'<a href="u4_3">Aufgabe 4.3</a>', "content"=>'Fibonacci'),
+	array("header"=>'<a href="u4_4">Aufgabe 4.4</a>', "content"=>'Topsort'),
 	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
 	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
 	array("header"=>'__HEADER__', "content"=>'__CONTENT__'),
@@ -50,7 +50,7 @@ function getContent($args = array()) {
 	
 	$string .= '<div class="flex-wrapper">';
 	for($i = $start; $i < $end; $i++) {
-		$string .= '<div class="flexbox"><div class="flexheader">'.$homeContent[$i]["header"].'</div><div class="flexcontent">'.$homeContent[$i]["content"].'</div></div>';
+		$string .= '<div class="flexbox"><div class="flexheader"><b>'.$homeContent[$i]["header"].'</b></div><div class="flexcontent">'.$homeContent[$i]["content"].'</div></div>';
 	}
 	$string .= "</div>";
 	
