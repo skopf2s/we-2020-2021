@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+<div id="innerHTML">innerHTML</div>
+<div id="innerText">innerText</div>
+<div id="textContent">textContent</div>
+<div id="outerHTML">outerHTML</div>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Zeit [s]</th>
+</thead>
+<tbody>
+<tr>
+<td>innerHTML</td>
+<td id="innerHTMLOut"></td>
+</tr>
+<tr>
+<td>innerText</td>
+<td id="innerTextOut"></td>
+</tr>
+<tr>
+<td>textContent</td>
+<td id="textContentOut"></td>
+</tr>
+<tr>
+<td>outerHTML</td>
+<td id="outerHTMLOut"></td>
+</tr>
+</tbody>
+</table>
+<script type="text/javascript">
+var innerHTML = document.getElementById("innerHTML");
+var innerText = document.getElementById("innerText");
+var textContent = document.getElementById("textContent");
+var outerHTML = document.getElementById("outerHTML");
+
+var tInnerHTML = performance.now();
+for(var i = 0; i < 10000; i++) {
+	innerHTML.innerHTML;
+}
+tInnerHTML = (performance.now()-tInnerHTML)/10000;
+
+var tInnerText = performance.now();
+for(var i = 0; i < 10000; i++) {
+	innerText.innerText;
+}
+tInnerText = (performance.now()-tInnerText)/10000;
+
+var tTextContent = performance.now();
+for(var i = 0; i < 10000; i++) {
+	textContent.textContent;
+}
+tTextContent = (performance.now()-tTextContent)/10000;
+
+var tOuterHTML = performance.now();
+for(var i = 0; i < 10000; i++) {
+	outerHTML.outerHTML;
+}
+tOuterHTML = (performance.now()-tOuterHTML)/10000;
+
+document.getElementById("innerHTMLOut").innerHTML = tInnerHTML;
+document.getElementById("innerTextOut").innerHTML = tInnerText;
+document.getElementById("textContentOut").innerHTML = tTextContent;
+document.getElementById("outerHTMLOut").innerHTML = tOuterHTML;
+</script>
+</body>
+</html>

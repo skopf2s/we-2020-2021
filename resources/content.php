@@ -21,6 +21,9 @@ $index = array(
 	array("header"=>'<a href="u5_4">Aufgabe 5.4</a>', "content"=>'Proxy', "task"=>5),
 	array("header"=>'<a href="u5_5">Aufgabe 5.5</a>', "content"=>'DeepCopy', "task"=>5),
 	array("header"=>'<a href="u6_1">Aufgabe 6.1</a>', "content"=>'Funktionen in JavaScript', "task"=>6),
-	array("header"=>'<a href="u6_2">Aufgabe 6.2</a>', "content"=>'Textanalyse mit filter-map-reduce', "task"=>6)
+	array("header"=>'<a href="u6_2">Aufgabe 6.2</a>', "content"=>'Textanalyse mit filter-map-reduce', "task"=>6),
+	array("header"=>'<a href="u7_1">Aufgabe 7.1</a>', "content"=>'Performanzmessungen von DOM-Operationen', "task"=>7),
+	array("header"=>'<a href="u7_2">Aufgabe 7.2</a>', "content"=>'Rednerliste mit Zeitmessung', "task"=>7),
+	array("header"=>'<a href="u7_3">Aufgabe 7.3</a>', "content"=>'TopSort als WebApp', "task"=>7)
 );
 ?>
