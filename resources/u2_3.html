@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+	width: 100%;
+	height: auto;
+}
+
+.box {
+	width: auto;
+	min-width: 480px;
+	border: 1px solid #000000;
+	padding: 5px;
+}
+
+.picture {
+	visibility: hidden;
+}
+
+#check:checked ~ .box > .picture {
+	visibility: visible;
+}
+</style>
+</head>
+<body>
+<h1>Übung 2.2</h1>
+<input id="check" type="checkbox" checked /> <label for="check">hide and show via checkbox</label>
+<div class="box">
+<img class="picture" src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Hochschule_Bonn-Rhein-Sieg_Wolfgang_G%C3%B6ddertz_Induktion.jpg" alt="Hochschule Bonn-Rhein-Sieg Wolfgang Göddertz Induktion" width="4592" height="3056"/>
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <?php
 if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
-  header("Location: home");
+  header("Location: ../u1_4");
 }
 
 function getContent($args) {
@@ -71,60 +71,7 @@ function getContent($args) {
 &lt;/html></pre></p>
 	
 	<p>Das Ergebnis sieht dann etwa so aus:</p>
-	<h1>Übung 1.2: Inventors of the Web</h1>
-	<ul>
-		<li><mark><b><a href="">Tim Berners-Lee:</a></b></mark> WWW, HTTP, HTML, URI</li>
-		<li><b>Hakom Lie and Bert Bos:</b> CSS</li>
-		<li><b>Brendan Eich:</b> JavaScript
-	</ul>
-	<hr>
-	<br>
-	<h2>Inventors of the WWW</h2>
-	<table style="border-width: 15px; border-style: solid; border-color: #AEAEAE #444444 #444444 #AEAEAE;">
-		<thead>
-			<tr>
-			<th colspan="4" style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">Inventors of the WWW</th>
-			</tr>
-			<tr>
-			<th style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">WWW</th>
-			<th style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">HTML</th>
-			<th style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">CSS</th>
-			<th style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">JavaScript</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			<td style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;"><mark>Tim Berners-Lee</mark></td>
-			<td style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;"><mark>Tim Berners-Lee</mark></td>
-			<td style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">Hakom Lie and Ber Bos</td>
-			<td style="border-width: 1px; border-style: solid; border-color: #444444 #AEAEAE #AEAEAE #444444;">Brendan Eich</td>
-			</tr>
-		</body>
-	</table>
-	<br>
-	<hr>
-	<table>
-		<caption><h3>Inventors of the WWW<hr><h3></caption>
-		<thead>
-			<tr>
-			<th>HTML</th>
-			<th><b>|</b></th>
-			<th>JavaScript</th>
-			</tr>
-			<tr>
-			<th><img src="https://kaul.inf.h-brs.de/we/assets/img/tbl.jpg" alt="Tim Berners-Lee" width="176" height="238"></th>
-			<th><b>|</b></th>
-			<th><img src="https://kaul.inf.h-brs.de/we/assets/img/eich.jpg" alt="Brendan Eich" width="181" height="239"></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-			<td><mark>Tim Berners-Lee</mark></td>
-			<td><b>|</b></td>
-			<td>Brendan Eich</td>
-		</tbody>
-	</table>
-	<hr>';
+	<iframe src="resources/u1_4.html" title="Aufgabe 1.4"></iframe>';
 }
 
 function getHeader($args) {

@@ -20,6 +20,15 @@ a:hover, a:active {
 
 pre {
 	overflow: auto;
+	background: #CCCCCC;
+	border-left: 7px solid gray;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+iframe {
+	width: 100%;
+	height: 600px;
 }
 
 #header {
@@ -28,9 +37,10 @@ pre {
 	left: 0;
 	right: 0;
 	width: auto;
-	background: #FEF;
+	background: #2a2a2a;
 	font-size: 150%;
 	height: 50px;
+	color: #FFFFFF;
 }
 
 #content {
@@ -40,7 +50,8 @@ pre {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	background: #909;
+	background: #EEEEEE;
+	border: 1px solid #BBBBBB;
 }
 
 #footer {
@@ -49,13 +60,45 @@ pre {
 	left: 0;
 	right: 0;
 	height: 50px;
-	background: #FEF;
+	background: #2a2a2a;
 	font-size: 120%;
 	text-align: center;
+	color: #FFFFFF;
+	z-index: -1;
 }
 
-.right {
+#header a, #footer a {
+	color: #FFFFFF;
+}
+
+#header #right-header {
 	float: right;
+	cursor: pointer;
+}
+
+#header #left-header {
+	float: left;
+}
+
+#header span {
+	margin: 10px;
+}
+
+#menu {
+	box-sizing: border-box;
+	position: fixed;
+	background: #2a2a2a;
+	color: #FFFFFF;
+	width: 300px;
+	right: 0;
+	top: 50px;
+	bottom: 0;
+	overflow-y: scroll;
+	padding-left: 10px;
+}
+
+#menu a {
+	color: #FFFFFF;
 }
 
 .flex-wrapper {
@@ -94,4 +137,13 @@ pre {
 
 .prevnext {
 	text-align: center;
+}
+
+.prevnext a {
+	display: inline-block;
+	margin: 5px;
+	border: 1px solid #000000;
+	width: 20px;
+	height: 20px;
+	border-radius: 11px;
 }

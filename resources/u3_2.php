@@ -1,6 +1,6 @@
 <?php
 if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
-  header("Location: home");
+  header("Location: ../u3_2");
 }
 
 function getContent($args) {
@@ -101,97 +101,10 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 &lt;/body>
 &lt;/html></pre></p>
 	<p>Das Ergebnis sieht dann etwa so aus:</p>
-	<div class="solution-only">
-	<div id="solution-body">
-<div id="p1">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</div>
-<div id="p2">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</div>
-<div id="p3">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</div>
-<div id="p4">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-</div>
-</div>
-</div>';
+	<iframe src="resources/u3_2.html" title="Aufgabe 3.2"></iframe>';
 }
 
 function getHeader($args) {
-	return array("title"=>"Aufgabe 3.2",
-	"style"=>".solution-only #solution-body {
-	display: grid;
-}
-
-.solution-only #p1 {
-	background: #FF2500;
-}
-
-.solution-only #p2 {
-	background: #2CEE27;
-}
-
-.solution-only #p3 {
-	background: #0533FF;
-}
-
-.solution-only #p4 {
-	background: #EA3EFE;
-}
-
-@media only screen and (max-width: 480px) {
-	.solution-only #solution-body {
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-	}
-}
-
-@media only screen and (min-width: 481px) and (max-width: 720px) {
-	.solution-only #solution-body {
-		grid-template-rows: auto auto auto;
-		grid-template-columns: 50% 50%;
-	}
-	
-	.solution-only #p1 {
-		grid-column-end: span 2;
-	}
-	
-	.solution-only #p2 {
-		grid-row-start: 2;
-	}
-	
-	.solution-only #p3 {
-		grid-row-start: 2;
-	}
-	
-	.solution-only #p4 {
-		grid-row-start: 3;
-		grid-column-end: span 2;
-	}
-}
-
-@media only screen and (min-width: 721px) {
-	.solution-only #solution-body {
-		grid-template-rows: auto auto;
-		grid-template-columns: 25% 50% 25%;
-	}
-	
-	.solution-only #p1 {
-		grid-column-end: span 4;
-	}
-	
-	.solution-only #p2 {
-		grid-row-start: 2;
-	}
-	
-	.solution-only #p3 {
-		grid-row-start: 2;
-	}
-	
-	.solution-only #p3 {
-		grid-row-start: 2;
-	}
-}");
+	return array("title"=>"Aufgabe 3.2");
 }
 ?>

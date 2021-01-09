@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+	background: #b2d6d1;
+}
+
+h1 {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	width: 50%;
+	padding: 5px;
+	vertical-align: top;
+}
+
+td:first-child {
+	text-align: right;
+}
+
+td:last-child {
+	text-align: left;
+}
+
+#content {
+	background: #FFFFFF;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	padding: 10px;
+}
+
+#selector {
+	display: none;
+}
+</style>
+</head>
+<body>
+<h1>Survey Form</h1>
+<div id="content">
+<form action="action.file">
+<table>
+<caption>Let us know how we can improve freeCodeCamp</caption>
+<tbody>
+<tr>
+<td>* Name:</td>
+<td><input type="text" name="name" placeholder="Enter your name" required /></td>
+</tr>
+<tr>
+<td>* Email:</td>
+<td><input type="email" name="mail" placeholder="Enter your email" required /></td>
+</tr>
+<tr>
+<td>* Age:</td>
+<td><input type="number" name="age" placeholder="Age" required /></td>
+</tr>
+<tr>
+<td>Which option best describes your current role?</td>
+<td><select name="role"><option>Guest</option><option selected>Student</option><option>Teacher</option></select></td>
+</tr>
+<tr>
+<td>* How likely is that you would recommend freeCodeCamp to a friend?</td>
+<td><label><input type="radio" name="recommendation" value="definitely" required /> Definitely</label><br /><label><input type="radio" name="recommendation" value="maybe" required /> Maybe</label><br /><label><input type="radio" name="recommendation" value="not" required /> Not sure</label>
+</tr>
+<tr>
+<td>What do you like most in FCC:</td>
+<td><select name="like"><option id="selector" selected disabled>Select an option</option><option>This could be an option</option><option>This could be another option</option><option>Your ad here!</option><option>Please don't make me write more options</option></select>
+</tr>
+<tr>
+<td>Things that should be improved in the future (Check all that apply):</td>
+<td><label><input type="checkbox" name="front" /> Front-end Projects</label><br /><label><input type="checkbox" name="back" /> Back-end Projects</label><br /><label><input type="checkbox" name="data" /> Data Visualization</label></td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</body>
+</html>
