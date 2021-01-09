@@ -19,6 +19,8 @@ $index = array(
 	array("header"=>'<a href="u5_2">Aufgabe 5.2</a>', "content"=>'Topologische Iterierbarkeit', "task"=>5),
 	array("header"=>'<a href="u5_3">Aufgabe 5.3</a>', "content"=>'Topologischer Generator', "task"=>5),
 	array("header"=>'<a href="u5_4">Aufgabe 5.4</a>', "content"=>'Proxy', "task"=>5),
-	array("header"=>'<a href="u5_5">Aufgabe 5.5</a>', "content"=>'DeepCopy', "task"=>5)
+	array("header"=>'<a href="u5_5">Aufgabe 5.5</a>', "content"=>'DeepCopy', "task"=>5),
+	array("header"=>'<a href="u6_1">Aufgabe 6.1</a>', "content"=>'Funktionen in JavaScript', "task"=>6),
+	array("header"=>'<a href="u6_2">Aufgabe 6.2</a>', "content"=>'Textanalyse mit filter-map-reduce', "task"=>6)
 );
 ?>
