@@ -1,0 +1,135 @@
+{
+	"html": {
+		"name": "HTML",
+		"content": "HTML (Hypertext Markup Language) ist der Code, welcher benötigt wird, um den Webinhalt zu strukturieren und ihm eine Bedeutung und einen Zweck zu geben. Zum Beispiel könnte Ihr Inhalt Absätze und Grafiken, aber auch Bilder und <a href=\"u8_3.html?category=html&term=table\">Tabellen</a> enthalten. Wie der Titel dieses Artikels verspricht, soll Ihnen hier ein grundsätzliches Verständnis vermittelt werden, wie HTML eingesetzt wird.",
+		"references": [
+			"https://developer.mozilla.org/de/docs/Learn/Getting_started_with_the_web/HTML_basics"
+		],
+		"headings": {
+			"name": "Überschriften",
+			"content": "Die Überschriftenelemente bestehen aus sechs verschiedenen Leveln. &lt;h1> ist die Überschrift mit der höchsten Gewichtung und &lt;h6> mit der kleinsten. Ein Überschriften-Element beschreibt das Thema des Bereiches, welcher der Überschrift folgt. Überschriften können auch verwendet werden, um ein Inhaltsverzeichnis für ein Dokument automatisch zu erstellen.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/HTML/Element/h1-h6"
+			]
+		},
+		"paragraph": {
+			"name": "Paragraphen",
+			"content": "Das &lt;p>-Element erzeugt einen Absatz, den zusammenhängenden Abschnitt eines längeren Textes. In <a href=\"u8_3.html?category=html\">HTML</a> kann &lt;p> jedoch für jedwede Art von zu gruppierendem, zusammenhängendem Inhalt genutzt werden, zum Beispiel Bilder oder Formularfelder.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/HTML/Element/p"
+			]
+		},
+		"span": {
+			"name": "span",
+			"content": "Das span-Element (engl span für überspannen) ist ein Element, das Text und andere Inline-Elemente enthalten kann, selbst aber keine semantische Bedeutung hat und nichts bewirkt. Es ist dazu gedacht, um mit Hilfe von <a href=\"u8_3.html?category=css\">CSS</a> formatiert zu werden.",
+			"references": [
+				"https://wiki.selfhtml.org/wiki/HTML/Textauszeichnung/span"
+			]
+		},
+		"div": {
+			"name": "div",
+			"content": "Das div-Element ist dazu gedacht, mehrere Elemente wie Text, Grafiken, <a href=\"u8_3.html?category=html&term=table\">Tabellen</a> usw., in einen gemeinsamen Bereich einzuschließen. Dieses allgemeine Element bewirkt nichts weiter als dass es in einer neuen Zeile des Fließtextes beginnt. Ansonsten hat es keine Eigenschaften. Es ist dazu gedacht, Bereiche zu erzeugen, die mit Hilfe von <a href=\"u8_3.html?category=css\">CSS</a> formatiert werden können. div bedeutet division, etwa Abteilung oder Bereich.",
+			"references": [
+				"https://wiki.selfhtml.org/wiki/HTML/Textstrukturierung/div"
+			]
+		},
+		"table": {
+			"name": "Tabellen",
+			"content": "Eine Tabelle ist eine geordnete Zusammenstellung von Texten oder Daten. Die darzustellenden Inhalte werden dabei in Zeilen (waagerecht) und Spalten (senkrecht) gegliedert, die grafisch aneinander ausgerichtet werden.",
+			"references": [
+				"https://wiki.selfhtml.org/wiki/HTML/Tabellen/Aufbau_einer_Tabelle"
+			]
+		}
+	},
+	"css": {
+		"name": "CSS",
+		"content": "CSS (engl.: Cascading Style Sheets = gestufte Gestaltungsbögen) ist die Sprache, die Sie benutzen, um Ihre Webseite zu gestalten. CSS Grundlagen führt Sie durch die Grundlagen dieser Stylesheet-Sprache. Wir beantworten damit solche Fragen wie: »Wie kann ich die <a href=\"u8_3.html?category=css&term=colors\">Farbe</a> meines Textes ändern? Wie kann ich diesen Inhalt genau an einer bestimmten Stelle anzeigen lassen? Wie kann ich meine Webseite mit Hintergrundbildern und -farben versehen?«",
+		"references": [
+			"https://developer.mozilla.org/de/docs/Learn/Getting_started_with_the_web/CSS_basics"
+		],
+		"selectors": {
+			"name": "Selektoren",
+			"content": "Selektoren definieren, auf welche Elemente eine Reihe von <a href=\"u8_3.html?category=css\">CSS</a> Regeln angewendet wird.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/CSS/CSS_Selectors"
+			]
+		},
+		"colors": {
+			"name": "Farben",
+			"content": "Der <a href=\"u8_3.html?category=css\">CSS</a> Datentyp Color beschreibt eine Farbe im sRGB Farbraum. Eine Farbe kann auf eine von drei Arten beschrieben werden: Schlüsselworte, rgb und rgba, hsl und hsla. ...",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/CSS/Farben"
+			]
+		},
+		"borders": {
+			"name": "Rahmen",
+			"content": "Die border Eigenschaft legt den kompletten Rahmen eines Elementes fest und ist eine Kurzform für border-color, border-style und border-width. Die Werte der drei Eigenschaften können in beliebiger Reihenfolge angegeben werden. Unterschiedliche Einstellungen für den oberen, unteren, linken und rechten Rahmen können nur unter den Kurzformen border-bottom, border-top, border-left und border-right festgelegt werden.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/CSS/border"
+			]
+		},
+		"margin": {
+			"name": "Außenabstand",
+			"content": "Außenrand oder -abstand (margin) ist ein erzwungener Leerraum zwischen dem aktuellen Element und seinem Eltern- bzw. seinen Nachbarelementen.",
+			"references": [
+				"https://wiki.selfhtml.org/wiki/CSS/Tutorials/Abstand/margin"
+			]
+		},
+		"padding": {
+			"name": "Innenabstand",
+			"content": "Innenabstand (padding, englisch: Polsterung) ist ein erzwungener Leerraum zwischen dem Inhalt eines Elements und seinem eigenen Elementrand, also z. B. zwischen dem Text eines Elements und dem Rand dieses Elements.",
+			"references": [
+				"https://wiki.selfhtml.org/wiki/CSS/Tutorials/Abstand/padding"
+			]
+		}
+	},
+	"javascript": {
+		"name": "JavaScript",
+		"content": "JavaScript (JS) ist eine leichtgewichtige, interpretierte oder JIT-übersetzte Sprache mit First-Class-Funktion. Bekannt ist sie hauptsächlich als Skriptsprache für Webseiten geworden, jedoch wird sie auch in vielen Umgebungen außerhalb des Browsers wie zum Beispiel Node.js, Apache CouchDB und Adobe Acrobat eingesetzt. JavaScript ist eine prototypbasierte Sprache, die mehreren Paradigmen folgt, dynamisch ist und sowohl objektorientierte, imperative als auch deklarative Programmierung (z. B. funktionales Programmieren) ermöglicht.",
+		"references": [
+			"https://developer.mozilla.org/de/docs/Web/JavaScript"
+		],
+		"function": {
+			"name": "Funktionen",
+			"content": "Funktionen sind ein Grundbaustein in <a href=\"u8_3.html?category=javascript\">JavaScript</a>. Eine Funktion ist eine Prozedur - eine Reihe von Anweisungen, um eine Aufgabe auszuführen oder eine Wert auszurechnen. Um Funktionen zu verwenden, müssen diese im Scope (Gültigkeitsbereich) deklariert werden, in dem sie ausgeführt werden soll.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/JavaScript/Guide/Funktionen"
+			]
+		},
+		"object": {
+			"name": "Objekte",
+			"content": "Ein Objekt ist eine Sammlung von zusammenhängenden Daten und/oder Funktionalitäten. Diese bestehen üblicherweise aus verschiedenen Variablen und <a href=\"u8_3.html?category=javascript&term=function\">Funktionen</a>, die Eigenschaften und Methoden genannt werden, wenn sie sich innerhalb von Objekten befinden.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/Basics"
+			]
+		},
+		"array": {
+			"name": "Arrays",
+			"content": "Das <a href=\"u8_3.html?category=javascript\">JavaScript</a>-Array ist ein globales <a href=\"u8_3.html?category=javascript&term=object\">Objekt</a> und Konstruktor für das Erstellen von Arrays, welche listenähnliche Objekte sind.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array"
+			]
+		},
+		"fetch": {
+			"name": "fetch",
+			"content": "Die Fetch API bietet eine Schnittstelle zum Abrufen von Ressourcen (auch über das Netzwerk). Wer schon einmal mit XMLHttpRequest gearbeitet hat wird Ähnlichkeiten erkennen. Die neue API bietet jedoch einen ganzen Satz leistungsfähigerer und flexiblerer <a href=\"u8_3.html?category=javascript&term=function\">Funktionen</a>.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/API/Fetch_API"
+			]
+		},
+		"promise": {
+			"name": "promise",
+			"content": "Das Promise <a href=\"u8_3.html?category=javascript&term=object\">Objekt</a> stellt eine Repräsentation einer eventuellen Ausführung (oder eines Fehlschlags) einer asynchronen Operation und den daraus resultierenden Ergebnissen dar. Um mehr darüber zu erfahren wie promises funktionieren und wie diese verwendet werden sollte zuerst Promises benutzen gelesen werden.",
+			"references": [
+				"https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+			]
+		},
+		"callback": {
+			"name": "callback",
+			"content": "Eine Rückruffunktion (engl. callback function) ist eine <a href=\"u8_3.html?category=javascript&term=function\">Funktion</a>, die einer anderen Funktion als Parameter übergeben und von dieser erst später unter definierten Bedingungen mit definierten Argumenten aufgerufen wird. Diese Anleitung behandelt den Umgang mit Callback-Funktionen, wie sie in verschiedenen Kontexten in <a href=\"u8_3.html?category=javascript\">JavaScript</a> Verwendung finden, z. B. bei den <a href=\"u8_3.html?category=javascript&term=array\">Array</a>-Methoden map und forEach.",
+			"references": [
+				"https://wiki.selfhtml.org/wiki/JavaScript/Tutorials/Umgang_mit_Callback-Funktionen"
+			]
+		}
+	}
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>WWW Navi</title>
+</head>
+<body onload="load()">
+<div id="frame">
+<div id="header">
+<h1>WWW-Navigator</h1>
+<div id="navigator"></div>
+</div>
+<div id="dropdown"></div>
+<div id="content"></div>
+<div id="sources">
+<div><h2>Quellen:</h2></div>
+</div>
+<div id="footer">
+<h1>Footer:</h1>
+<a href="/sitemap">Sitemap</a>
+<a href="/home">Home</a>
+<a href="/news">News</a>
+<a href="/contact">Contact</a>
+<a href="/about">About</a>
+</div>
+<script>
+var content = "";
+
+function load() {
+	loadNavigator();
+	loadDropdown();
+	loadContent();
+}
+
+async function loadContent() {
+	await loadFile();
+	
+	let urlParams = new URLSearchParams(window.location.search);
+	let urlCategory = urlParams.has("category") ? urlParams.get("category") : "html";
+	let urlTerm = urlParams.has("term") ? urlParams.get("term") : Object.keys(content[urlCategory])[3];
+	
+	if(urlParams.has("term")) {
+		document.getElementById("content").innerHTML = content[urlCategory][urlParams.get("term")].content;
+		
+		let list = document.createElement("ul");
+		
+		content[urlCategory][urlParams.get("term")].references.forEach((reference) => {
+			let child = document.createElement("li");
+			child.innerHTML = '<a href="'+reference+'">'+reference+'</a>';
+			
+			list.appendChild(child);
+		});
+		
+		document.getElementById("sources").appendChild(list);
+	} else {
+		document.getElementById("content").innerHTML = content[urlCategory].content;
+		
+		let list = document.createElement("ul");
+		
+		content[urlCategory].references.forEach((reference) => {
+			let child = document.createElement("li");
+			child.innerHTML = '<a href="'+reference+'">'+reference+'</a>';
+			
+			list.appendChild(child);
+		});
+		
+		document.getElementById("sources").appendChild(list);
+	}
+}
+
+async function loadDropdown() {
+	await loadFile();
+	
+	let list = document.createElement("ul");
+	let urlParams = new URLSearchParams(window.location.search);
+	let urlCategory = urlParams.has("category") ? urlParams.get("category") : "html";
+	let urlTerm = urlParams.has("term") ? urlParams.get("term") : null;
+	
+	for(const term of Object.keys(content[urlCategory])) {
+		if(content[urlCategory][term].name !== undefined) {
+			let child = document.createElement("li");
+			child.innerHTML = '<a href="u8_3.html?category='+urlCategory+'&term='+term+'">'+content[urlCategory][term].name+'</a>';
+			
+			if(term === urlTerm) {
+				child.classList.add("active");
+			}
+			
+			list.appendChild(child);
+		}
+	}
+	
+	document.getElementById("dropdown").appendChild(list);
+}
+
+async function loadFile() {
+	if(typeof content !== 'object') {
+		var headers = new Headers();
+		headers.append('pragma', 'no-cache');
+		headers.append('cache-control', 'no-cache');
+		headers.append('mode', 'cors');
+		headers.append('Content-Type', 'text/json; charset=UTF-8');
+		content = JSON.parse(await fetch("u8_3.json", {method: 'GET', headers: headers}).then(content => content.text()));
+	}
+}
+
+async function loadNavigator() {
+	await loadFile();
+	
+	let list = document.createElement("ul");
+	let urlParams = new URLSearchParams(window.location.search);
+	let urlCategory = urlParams.has("category") ? urlParams.get("category") : "html";
+	let urlTerm = urlParams.has("term") ? urlParams.get("term") : Object.keys(content[urlCategory])[3];
+	
+	for(const category of Object.keys(content)) {
+		let child = document.createElement("li");
+		child.innerHTML = '<a href="u8_3.html?category='+category+'">'+content[category].name+'</a>';
+		
+		if(category === urlCategory) {
+			child.classList.add("active");
+		}
+		
+		list.appendChild(child);
+	}
+	
+	document.getElementById("navigator").appendChild(list);
+}
+</script>
+<style>
+#frame {
+	display: grid;
+}
+
+#frame div:first-child {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#frame div:nth-child(5) {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#header {
+	background: #C24F4F;
+}
+
+#header h1 {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#navigator li {
+	display: inline;
+	margin-right: 20px;
+	padding: 5px 20px 5px 20px;
+	background: #6A70A0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #EEEEEE #9A9A9A #9A9A9A #EEEEEE;
+	border-radius: 20px;
+}
+
+#dropdown li {
+	margin-top: 10px;
+	margin-right: 20px;
+	padding: 5px 20px 5px 20px;
+	background: #6A70A0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #EEEEEE #9A9A9A #9A9A9A #EEEEEE;
+	border-radius: 20px;
+}
+
+#dropdown ul {
+	list-style: none;
+}
+
+.active {
+	background: #E1DCDA !important;
+}
+
+#dropdown, #sources {
+	background: #C28283;
+}
+
+#content {
+	background: #95D2F3;
+	padding: 10px;
+}
+
+#sources h2 {
+	margin: 10px;
+}
+
+#footer, #footer a {
+	background: #000000;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#footer a {
+	margin: 10px;
+}
+
+#footer h1 {
+	display: inline;
+}
+
+@media only screen and (min-width: 721px) {
+	#frame {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 20% 50% 30%;
+	}
+	
+	#frame div:first-child, #frame div:nth-child(5) {
+		grid-column-end: span 3;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	#frame {
+		grid-template-rows: auto auto;
+		grid-template-columns: 30% 70%;
+	}
+	
+	#frame div:first-child, #frame div:nth-child(4), #frame div:nth-child(5) {
+		grid-column-end: span 3;
+	}
+}
+</style>
+</body>
+</html>

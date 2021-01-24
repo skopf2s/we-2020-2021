@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="UTF-8"/>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+async function multiFetch() {
+	const [file1, file2] = await Promise.all([
+		fetch("A.txt").then(content => content.text()),
+		fetch("B.txt").then(content => content.text())
+	]);
+	
+	lines1 = file1.split("\r\n");
+	lines2 = file2.split("\r\n");
+	
+	Array.prototype.forEach.call(lines1, ((value, index) => {
+		document.getElementById("output").innerHTML = document.getElementById("output").innerHTML+value+" ist das Pokémon mit der Nummer "+lines2[index]+"<br />";
+	}));
+}
+
+multiFetch();
+</script>
+<div id="output">
+</div>
+</body>
+</html>
