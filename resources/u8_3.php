@@ -240,7 +240,7 @@ async function loadNavigator() {
 &lt;/body>
 &lt;/html></pre>
 	</p>
-	<p><span>Das Ergebnis sieht dann etwa so aus (Links führen auf eine separate Seite):</span>
+	<p><span>Das Ergebnis sieht dann etwa so aus:</span>
 	<iframe src="resources/u8_3/u8_3.html" title="Aufgabe 8.3"></iframe>
 	</p>';
 }

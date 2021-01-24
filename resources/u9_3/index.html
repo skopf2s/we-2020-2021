@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" href="common.css" type="text/css" />
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+<script type="module" src="common.js"></script>
+<title>WWW Navi</title>
+</head>
+<body>
+<div id="frame">
+<div id="header">
+<h1>WWW-Navigator</h1>
+<router-view name="navigator"></router-view>
+</div>
+<router-view name="dropdown"></router-view>
+<router-view name="content"></router-view>
+<router-view name="sources"></router-view>
+<div id="footer">
+<h1>Footer:</h1>
+<a href="/sitemap">Sitemap</a>
+<a href="/home">Home</a>
+<a href="/news">News</a>
+<a href="/contact">Contact</a>
+<a href="/about">About</a>
+</div>
+</div>
+</body>
+</html>
