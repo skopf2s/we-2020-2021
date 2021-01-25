@@ -1,0 +1,141 @@
+#frame {
+	display: grid;
+}
+
+#frame div:first-child {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+#frame div:nth-child(5) {
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#header {
+	background: #C24F4F;
+}
+
+#header h1 {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+#navigator li {
+	display: inline-block;
+	margin-right: 20px;
+	padding: 5px 20px 5px 20px;
+	background: #6A70A0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #EEEEEE #9A9A9A #9A9A9A #EEEEEE;
+	border-radius: 20px;
+}
+
+#dropdown li {
+	margin-top: 10px;
+	margin-right: 20px;
+	padding: 5px 20px 5px 20px;
+	background: #6A70A0;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #EEEEEE #9A9A9A #9A9A9A #EEEEEE;
+	border-radius: 20px;
+}
+
+#navigator li:nth-child(4), #navigator li:nth-child(5) {
+	float: right;
+}
+
+#dropdown ul {
+	list-style: none;
+}
+
+.active {
+	background: #E1DCDA !important;
+}
+
+#dropdown, #sources {
+	background: #C28283;
+}
+
+#content {
+	position: relative;
+	background: #95D2F3;
+	padding: 10px;
+}
+
+#content .edit {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+#content textarea {
+	width: 100%;
+	height: 200px;
+}
+
+#form {
+	text-align: center;
+}
+
+#form input {
+	padding: 2px;
+	margin: 3px;
+	border-radius: 5px;
+}
+
+.alert {
+	display: block;
+	background: #F9C557;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 5px;
+	padding: 3px;
+}
+
+#sources h2 {
+	margin: 10px;
+}
+
+#sources {
+	word-break: break-all;
+	padding: 5px;
+}
+
+#footer, #footer a {
+	background: #000000;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+#footer a {
+	margin: 10px;
+}
+
+#footer h1 {
+	display: inline;
+}
+
+@media only screen and (min-width: 721px) {
+	#frame {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: 20% 50% 30%;
+	}
+	
+	#frame div:first-child, #frame div:nth-child(5) {
+		grid-column-end: span 3;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	#frame {
+		grid-template-rows: auto auto;
+		grid-template-columns: 30% 70%;
+	}
+	
+	#frame div:first-child, #frame div:nth-child(4), #frame div:nth-child(5) {
+		grid-column-end: span 3;
+	}
+}

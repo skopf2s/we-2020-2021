@@ -30,6 +30,9 @@ $index = array(
 	array("header"=>'<a href="u8_3">Aufgabe 8.3</a>', "content"=>'WWW-Navigator', "task"=>8),
 	array("header"=>'<a href="u9_1">Aufgabe 9.1</a>', "content"=>'Komponente in Vue.js', "task"=>9),
 	array("header"=>'<a href="u9_2">Aufgabe 9.2</a>', "content"=>'Menü-Komponente', "task"=>9),
-	array("header"=>'<a href="u9_3">Aufgabe 9.3</a>', "content"=>'Vue.js WWW-Navigator', "task"=>9)
+	array("header"=>'<a href="u9_3">Aufgabe 9.3</a>', "content"=>'Vue.js WWW-Navigator', "task"=>9),
+	array("header"=>'<a href="u10_1">Aufgabe 10.1</a>', "content"=>'Registrierung mit PHP', "task"=>10),
+	array("header"=>'<a href="u10_2">Aufgabe 10.2</a>', "content"=>'Login mit PHP', "task"=>10),
+	array("header"=>'<a href="u10_3">Aufgabe 10.3</a>', "content"=>'WWW-Navigator zum Content-Editor ausbauen', "task"=>10)
 );
 ?>
