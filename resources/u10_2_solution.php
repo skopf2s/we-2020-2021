@@ -33,7 +33,7 @@ if(isset($_POST['name']) && isset($_POST['password'])) {
 			$_SESSION['tries'] = 0;
 			$_SESSION['lock_expires'] = 0;
 			echo "Login erfolgreich. Du wirst in Kürze weitergeleitet.";
-			header("Refresh: 2, url=u10_3_solutions.php");
+			header("Refresh: 2, url=u10_3_solution.php");
 		} else {
 			$_SESSION['tries']++;
 			if($_SESSION['tries'] >= 3) {

@@ -113,7 +113,7 @@ function loadReferences() {
 
 function logout() {
 	session_destroy();
-	header("Refresh: 0, url=u10_3_solutions.php");
+	header("Refresh: 0, url=u10_3_solution.php");
 }
 
 function saveContent() {
