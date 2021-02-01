@@ -4,7 +4,7 @@ if(basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"])) {
 }
 
 function getContent($args) {
-	return '<h1>Aufgabe 3.2 – Responsiv mit Grid Mobile-First</h1>
+	return '<h1>Aufgabe 3.3 – Responsiv mit Grid Mobile-First</h1>
 	<p><b>Implementieren Sie <a href="https://kaul.inf.h-brs.de/we/assets/img/landing.png">folgende</a> Landing Page responsiv mit Grid Layout. Vermeiden Sie außerdem das Erscheinen von Scrollbars so weit wie möglich.</b></p>
 	<p>Der notwendige Code dafür sieht so aus:</p>
 	<p><pre>&lt;!DOCTYPE html>
@@ -125,6 +125,6 @@ button {
 }
 
 function getHeader($args) {
-	return array("title"=>"Aufgabe 3.2");
+	return array("title"=>"Aufgabe 3.3");
 }
 ?>
