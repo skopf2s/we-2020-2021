@@ -1,5 +1,5 @@
 import {fileLoader as loadFile } from './fileLoader.js';
-import {navigatorLoader as loadNavigator} from './navigatorloader.js';
+import {navigatorLoader as loadNavigator} from './navigatorLoader.js';
 import {dropdownLoader as loadDropdown} from './dropdownLoader.js';
 import {contentLoader as loadContent} from './contentLoader.js';
 import {sourceLoader as loadSources} from './sourceLoader.js';
