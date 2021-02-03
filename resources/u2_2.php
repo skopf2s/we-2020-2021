@@ -106,7 +106,8 @@ h1 {
 &lt;/body>
 &lt;/html></pre></p>
 	<p>Das Ergebnis sieht dann etwa so aus:</p>
-	<iframe src="resources/u2_2.html" title="Aufgabe 2.2"></iframe>';
+	<iframe src="resources/u2_2.html" title="Aufgabe 2.2"></iframe>
+	<p>Lorem Ipsum von <a href="https://loremipsum.de/">https://loremipsum.de/</a>.</p>';
 }
 
 function getHeader($args) {

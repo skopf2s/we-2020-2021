@@ -36,8 +36,9 @@ multiFetch();
 &lt;/html></pre>
 	</p>
 	<p><span>Das Ergebnis sieht dann etwa so aus:</span>
-	<iframe src="resources/u8_1.html" title="Aufgabe 8.2"></iframe>
-	</p>';
+	<iframe src="resources/u8_2.html" title="Aufgabe 8.2"></iframe>
+	</p>
+	<p>Namen und Nummern von Pokémon aus <a href="https://www.pokewiki.de/index.php?title=Vorlage:Namenr&action=edit">https://www.pokewiki.de/Vorlage:Namenr</a></p>';
 }
 
 function getHeader($args) {

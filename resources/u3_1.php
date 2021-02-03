@@ -91,7 +91,8 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 &lt;/body>
 &lt;/html></pre></p>
 	<p>Das Ergebnis sieht dann etwa so aus:</p>
-	<iframe src="resources/u3_1.html" title="Aufgabe 3.1"></iframe>';
+	<iframe src="resources/u3_1.html" title="Aufgabe 3.1"></iframe>
+	<p>Lorem Ipsum von <a href="https://loremipsum.de/">https://loremipsum.de/</a>.</p>';
 }
 
 function getHeader($args) {
